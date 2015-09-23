@@ -1,0 +1,125 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    font-family: 'Avenir Next', sans-serif;
+}
+
+.frame {
+    overflow-x: hidden;
+    height: 568px;
+    width: 320px;
+    background: rgba(200, 200, 200, 0.3);
+    position: relative;
+    margin: 0 auto;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.banner {
+    background-color: #6d6e70;
+    color: #444;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    position: fixed;
+    font-family: 'Avenir Next', sans-serif;
+    color: #fff;
+}
+
+.photoset {
+    margin: 0;
+    padding: 0;
+    margin-top: 60px;
+    overflow-y: scroll; 
+    height: 508px;
+}
+
+.photo {
+    list-style-type: none;
+    max-height: 200px;
+    height: 200px; 
+    width: 100%;
+    background-size: cover; 
+    cursor: pointer;
+}
+
+.photo:hover {
+    opacity: 0.98;
+}
+
+.photo-1 {
+    background-image: url('img/1.jpg');
+}
+
+.photo-2 {
+    background-image: url('img/2.jpg');
+}
+
+.photo-3 {
+    background-image: url('img/3.jpg');
+}
+
+.photo-4 {
+    background-image: url('img/4.jpg');
+}
+
+.photo-5 {
+    background-image: url('img/5.jpg');
+}
+
+.overlay {
+    width: 100%;
+    height: calc(100% - 60px);
+    background-color: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    top: 60px;
+}
+
+.share-modal {
+    width: 90%;
+    border-radius: 1px; 
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top: calc(50% - 75px + 60px);
+    color: #6d6e70;
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+
+.share-modal ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.share-modal ul li {
+    list-style-type: none;
+    width: 75%;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    color: #1f8dd6;
+    border: 1px solid #1f8dd6;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.share-modal ul li:hover {
+    color: #fff;
+    background-color: #1f8dd6;
+}
