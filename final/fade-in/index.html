@@ -35,10 +35,10 @@
 		<script>
 			$( document ).ready(function() {
 				$(".photo").on('click', function(){
-					$(".overlay").show();				
+					$(".overlay").fadeIn(500);				
 				});
 				$(".links li.cancel").on('click', function(){
-					$(".overlay").hide();			
+					$(".overlay").fadeOut(500);			
 				});
 			});
 		</script>

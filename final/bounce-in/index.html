@@ -19,7 +19,7 @@
 			    	<li class="photo photo-5"></li>
 			    </ul>
 			    <div class="overlay">
-			    	<div class="share-modal">
+			    	<div class="share-modal modal-hidden">
 			    		Share to...
 			    		<ul class="links">
 			    			<li>Facebook</li>
@@ -35,10 +35,13 @@
 		<script>
 			$( document ).ready(function() {
 				$(".photo").on('click', function(){
-					$(".overlay").show();				
+					$(".overlay").show();
+					$(".share-modal").addClass('modal-visible');
+
 				});
 				$(".links li.cancel").on('click', function(){
-					$(".overlay").hide();			
+					$(".overlay").hide();	
+					$(".share-modal").removeClass('modal-visible');		
 				});
 			});
 		</script>

@@ -18,23 +18,27 @@
 			    	<li class="photo photo-4"></li>
 			    	<li class="photo photo-5"></li>
 			    </ul>
-			    <div class="overlay">
-			    	<div class="share-modal">
-			    		Share to...
-			    		<ul class="links">
-			    			<li>Facebook</li>
-			    			<li>Twitter</li>
-			    			<li>Flickr</li>
-			    		</ul>
-			    	</div>
-			    </div>
+			    <div class="overlay"></div>
+		    	<div class="share-modal modal-hidden animate-pop-up">
+		    		Share via...
+		    		<ul class="links">
+		    			<li>E-mail</li>
+		    			<li>Twitter</li>
+		    			<li>Flickr</li>
+		    		</ul>
+		    	</div>
 		    </div>
 		</div>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script>
 			$( document ).ready(function() {
-				$(".links li").on('click', function(){
-					$(".links").hide();					
+				$(".photo").on('click', function(){
+					$(".overlay").fadeIn(200);
+					$(".share-modal").addClass("modal-visible");				
+				});
+				$(".overlay").on('click', function(){
+					$(".overlay").fadeOut(200);
+					$(".share-modal").removeClass("modal-visible");		
 				});
 			});
 		</script>
